@@ -38,7 +38,8 @@ export default function (context, {
       useBuiltIns
     }],
     // For dynamic import that you will use a lot in code-split
-    require.resolve('babel-plugin-syntax-dynamic-import')
+    require.resolve('babel-plugin-syntax-dynamic-import'),
+    require.resolve('babel-plugin-transform-object-assign')
   ]
 
   return {
